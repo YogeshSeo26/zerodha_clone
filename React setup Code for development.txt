@@ -1,0 +1,70 @@
+cd frontend / dashboard / backend
+
+install React.js and Node.js and Express.js
+to create React default folder for project creation
+with this command
+
+npx create-react-app dashboard
+
+then need to entor this dashboard folder with this command
+cd dashboard
+
+then install npm all packages with this code
+npm install
+
+and then install react dom with this command
+npm install react-router-dom
+
+and then install npm package with this command on dashboard
+npm install chart.js react-chartjs-2
+
+and then install this npm package with this command on frontend
+to write test case in test case folder need to create 
+new test case file
+npm install --save-dev react-test-renderer
+..................................................
+
+and then open js file and type 
+imr and then press tab (shortform for import react)
+
+and then type ffc to import basic function setup
+......................................................
+
+for github initiate
+git init
+git add. (move to staging area)
+gi commit -m "Initial Setup" (commit and commit name)
+git check out -b project-structure (create Branch)
+..............................................................
+
+cd backend
+
+then we run this command in backend folder
+
+to initialize express application in this project with this command
+npm init (npm init -y (in this ocmmand default answerd 
+automatically selected))
+then hit enter 10 times after each every line
+
+after this package.json file will created then open package.json file
+and remove test command and instead of "test":, write "start": and 
+in double qoute we write "nodemon index.js" and then save
+........................................................
+
+then we run this command in backend folder
+npm i -d nodemon
+"-d" is stand for developer dependencies
+and this command also created "node_modules" folder automatically
+then no need to run "npm install" command and if required then
+we can run "npm install" command
+
+then we need to run this command 
+npm i express body-parser cors dotenv mongoose passport passport-local
+passport-local-mongoose
+
+and if need to update nodemon new version then run this command
+npm install -g nodemon@latest
+
+Then need to install new package in dashboard which name is axios
+this package help us to connect with APIs
+npm i axios

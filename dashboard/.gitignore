@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+dist/
+build/
+
+# Environment Variables (Crucial for security!)
+.env
+.env.local
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+
+# Ignore all node_modules in any sub-folder
+**/node_modules/
+
+# Ignore environment files everywhere
+**/.env
+**/.env.local
+
+# Ignore build/dist folders in all sub-projects
+**/dist/
+**/build/
+
+# Ignore OS-specific files
+.DS_Store

@@ -1,0 +1,148 @@
+Zerodha Project Github push code command
+
+git config --global user.name "YogeshSeo26"
+git config --global user.email "your-email@example.com"
+
+................
+If you haven't done much work on that branch yet, 
+the easiest way to "fix" that specific commit is to:
+
+Update your config (the steps above).
+Run git commit --amend --reset-author in your terminal.
+Push the change to GitHub using git push --force.
+.................................................
+for github initiate
+
+git init
+git add. (move to staging area)
+git commit -m "Initial Setup" (commit and commit name)
+git checkout -b project-structure-ready (create new Branch)
+git remote add origin https://github.com/YogeshSeo26/zerodha_clone.git
+git push -u origin project-structure-ready
+..........................................................
+
+Step 1: Initialize Git in your Project
+
+Open your project folder in VS Code
+git init
+This creates a hidden .git folder in your project, 
+telling your computer to start tracking changes.
+
+Step 2: Add your Files
+
+Now, you need to tell Git which files you want to track. 
+To include everything in the folder:
+git add .
+
+Step 3: Create your First Commit
+
+Think of a commit as a "snapshot" of your code at this moment.
+git commit -m "Initial commit: Zerodha clone setup"
+
+Step 4: Link your Local Folder to GitHub
+
+You need the URL of your GitHub repository. It should look like 
+https://github.com/your-username/zerodha_clone.git.
+git remote add origin https://github.com/YogeshSeo26/zerodha_clone.git
+
+Step 5: Create or Rename the Branch (Recommended)
+
+Create
+and then create branch
+git check out -b project-structure (create Branch)
+
+Rename
+GitHub now uses main as the default branch name, but Git often 
+starts with master. This command ensures they match:
+git branch -M main
+
+Add in origin folder link
+git remote add origin https://github.com/YogeshSeo26/zerodha_clone.git
+
+Step 6: Push to GitHub
+
+Finally, upload your code:
+git push -u origin main
+
+Push code in New branch
+git push -u origin project-structure-ready
+
+Note: If this is your first time, a popup might appear asking 
+you to sign into your GitHub account. Follow the prompts to 
+authorize VS Code.
+
+Summary Table of Commands
+Action			Command
+Start Git		git init
+Stage Files		git add .
+Save Progress		git commit -m "message"
+Connect to GitHub	git remote add origin <URL>
+Upload Code		git push -u origin main
+
+
+Pro Tip: The .gitignore file
+
+Before you push, make sure you aren't uploading 
+unnecessary files (like node_modules if you're using React/Node). 
+Create a file named .gitignore in your folder and add the names of 
+folders you want Git to ignore.
+
+How to create your .gitignore file
+1. Create the file: In your VS Code file explorer (left side), 
+create a new file in the root of zerodha_clone and name it exactly 
+.gitignore (make sure it starts with a dot).
+
+2. Create the File
+
+In your VS Code terminal (inside the zerodha_clone folder), 
+run this command to create the file:
+touch .gitignore
+
+2. Add the "Ignore" Rules
+Open the newly created .gitignore file in VS Code and 
+paste the following standard rules. These cover 
+almost all web development projects:
+
+Plaintext:-
+
+.................................................
+# Dependencies
+node_modules/
+dist/
+build/
+
+# Environment Variables (Crucial for security!)
+.env
+.env.local
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+...............................................................
+
+3. Save and Push the Changes
+
+Now that you've told Git what to ignore, you need to 
+commit this new file and push it to GitHub:
+
+git add .
+git commit -m "Added gitignore to clean up project"
+git push
+....................
+
+Important: What if I already pushed node_modules?
+
+If you accidentally pushed the node_modules folder to 
+GitHub before creating this file, it will stay there 
+even after you add the .gitignore. To fix this and remove 
+it from GitHub (without deleting it from your computer), run:
+
+..........................
+git rm -r --cached node_modules
+git commit -m "Remove node_modules from tracking"
+git push origin main
+...............................
