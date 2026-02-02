@@ -14,11 +14,25 @@ Push the change to GitHub using git push --force.
 for github initiate
 
 git init
-git add. (move to staging area)
+git add . (move to staging area)
 git commit -m "Initial Setup" (commit and commit name)
 git checkout -b project-structure-ready (create new Branch)
 git remote add origin https://github.com/YogeshSeo26/zerodha_clone.git
 git push -u origin project-structure-ready
+..........................................................
+
+if you want delete or remove any one or multiple
+file and re-upload same file for GitHub then 
+follow these commands
+Remove-Item -Recurse -Force (file name, more file name if you want)
+
+for example below:-
+
+Remove-Item -Recurse -Force node_modules, package-lock.json
+npm install
+git add package-lock.json
+git commit -m "fix lock file"
+git push
 ..........................................................
 
 Step 1: Initialize Git in your Project

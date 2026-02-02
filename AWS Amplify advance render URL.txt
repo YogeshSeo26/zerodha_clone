@@ -1,0 +1,12 @@
+paste this render backend url in
+
+AWS Amplify advance setting whiledeploying frontend and backend
+app
+
+REACT_APP_BACKEND_URL
+ =
+https://zerodha-clone-backend-ceij.onrender.com
+
+
+MONGO_URL =
+mongodb+srv://yogeshZerodha:yogeshZerodha100@zerodhaclonecluster.mhh0xvt.mongodb.net/zerodha_clone
