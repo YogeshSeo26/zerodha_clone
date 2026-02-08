@@ -20,9 +20,19 @@ const Menu = () => {
 
     return (
         <div className="menu-container">
-            <img src="logo.png" style={{ width: "50px" }} />
+            <Link to="https://zerodha-clone-frontend-0meu.onrender.com/" style={{ textDecoration: "none" }}>
+                <img src="logo.png" style={{ width: "50px" }} />
+            </Link>
+
             <div className="menus">
                 <ul>
+
+                    <li>
+                        <Link style={{ textDecoration: "none" }} to="https://zerodha-clone-frontend-0meu.onrender.com/">
+                            <p className={menuClass} style={{ color: "red" }}>HomePage</p>
+                        </Link>
+                    </li>
+
                     <li>
                         <Link style={{textDecoration:"none"}} to="/" onClick={()=> handleMenuClick(0)}>
                             <p className={selectedMenu===0 ? activeMenuClass : menuClass}>Dashboard</p>
