@@ -30,6 +30,10 @@ function Navbar() {
                                 <Link class="nav-link active" aria-current="page" to="/signup">Signup</Link>
                             </li>
 
+                            <li className="nav-item">
+                                <Link className="nav-link active" style={{fontWeight: "bold", color: "#387ed1"}} to="https://zerodha-clone-dashboard-no5r.onrender.com/">Dashboard</Link>
+                            </li>
+
                             <li class="nav-item">
                                 <Link class="nav-link active" aria-current="page" to="/about">About</Link>
                             </li>
